@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rap Bit | Cadastrar Professor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #fff;
+            display: flex;
+            justify-content: center; /* Centraliza a box horizontalmente */
+            align-items: center; /* Centraliza a box verticalmente */
+            height: 100vh; /* Faz a altura da tela ser 100% */
+            margin-top: 80px; /* Ajusta a distância da box em relação à navbar fixa */
+        }
+        .box2cadastrar{
+            margin-top: 18%;
+        }
+    </style>
+
+</head>
+<body class="cadastrarProfessor">
+    
+    <!-- Cabeçalho com navegação -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">INÍCIO</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <div class="logo">
+                    <img src="imagens/logo.png" alt="Logo">
+                </div>
+                <li><a href="contato.html" >CONTATO</a></li>
+                <li><a href="outros.html">OUTROS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção principal com imagem completa como fundo -->
+    <main class="hero-section">
+        <div class="box2cadastrar">
+        <div class="container box">
+            <form autocomplete="off" method="POST">
+                <h1>Cadastrar Prof.</h1>
+                <div class="inputBox">
+                    <input type="text" name="nome" required>
+                    <span>Nome</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="email" required>
+                    <span>Email</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" required>
+                    <span>Telefone</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="date" name="data" required>
+                    <span>Data de Nascimento</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="senha" required>
+                    <span>Senha</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <span for="opcoes">Escolha o curso relacionado:</span>
+                    <div class="selectBox">
+                        <select id="opcoes1" name="opcoes">
+                            <option value="1">IAs no trabalho</option>
+                            <option value="2">Grandes volumes de dados com IA
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" name="btn" value="Login">
+                <p class="no-account">Já possui cadastro? <a href="entrar.html">Clique aqui!</a></p>
+            </form>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
